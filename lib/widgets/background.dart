@@ -24,10 +24,12 @@ class Background extends StatelessWidget {
         // Purple gradient
         Container(decoration: boxDecoration),
 
-        // Pink box
+        /* El widget positioned nos sirve tal y como por ejemplo en html y css hacemos 
+        divs relativos u absolutos */
         Positioned(
           top: -100,
           left: -30,
+          // Pink box
           child: _PinkBox()
         ),
       ],
