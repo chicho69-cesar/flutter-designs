@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:designs/widgets/background.dart';
+import 'package:designs/widgets/card_table.dart';
 import 'package:designs/widgets/custom_bottom_navigation.dart';
 import 'package:designs/widgets/page_title.dart';
 
@@ -30,9 +31,13 @@ class _HomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           // Titles
           PageTitle(),
+
+          // Card table
+          CardTable(),
         ],
       ),
     );
